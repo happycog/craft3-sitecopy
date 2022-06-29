@@ -1,5 +1,9 @@
 # Changelog
 
+## {new version} - 2022-06-29
+### Added
+- Introduced priority level control for the Queue job, with override ability in the admin panel. (soben/happycog)
+
 ## 0.7.1 - 2022-06-16
 ### Fixed
 - Fixed a bug on siteGroups where element sections are disabled for the primary site
