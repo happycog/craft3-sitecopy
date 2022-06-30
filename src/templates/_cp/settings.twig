@@ -147,13 +147,12 @@
 
 {{ forms.textField({
     label: "Queue Priority"|t('sitecopy'),
-    instructions: "Adjust the priority to fit your common usage."|t('sitecopy'),
+    instructions: "Adjust the priority to fit your common usage/needs. Lower number means higher priority."|t('sitecopy'),
     id: 'queuePriority',
     name: 'queuePriority',
-    value: field.queuePriority,
+    value: settings.queuePriority,
     type: 'number',
     min: 1,
-    max: 200,
+    max: 1024,
     size: 5,
-    errors: field.getErrors('queuePriority')
   }) }}

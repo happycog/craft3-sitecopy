@@ -45,7 +45,7 @@ class SettingsModel extends Model
     /**
      * @var string
      */
-    public $queuePriority = 5;
+    public $queuePriority = 1024;
 
     /**
      * @return array
@@ -58,7 +58,7 @@ class SettingsModel extends Model
             [['combinedSettingsGlobals'], 'checkCombinedSettingsGlobals'],
             [['combinedSettingsAssets'], 'checkCombinedSettingsAssets'],
             [['combinedSettingsCheckMethod'], 'in', 'range' => ['and', 'or', 'xor']],
-            [['queuePriority'], 'number', 'integerOnly' => true],
+            [['queuePriority'], 'integer'],
         ];
     }
 
